@@ -178,10 +178,52 @@ apt-get clean
 ### Workarounds
 
 * Restart terminal app
-* ✅ Use SSH instead
 * Keep local sessions short
+* ✅ Use SSH from another device (recommended)
 
 This is a **UI bug**, not a shell failure.
+
+---
+)
+
+🎥 Video Demonstrations (Real Device)
+
+The following videos document real behavior on a jailbroken iOS 9.3.5 device and are included for transparency and troubleshooting reference.
+
+▶️ Video 1 — Terminal App Auto-Closes After Jailbreak
+
+Description:
+After jailbreak, the on-device terminal application fails to stay open and closes immediately. To continue working, an SSH connection is established from another device and used successfully.
+
+Commands shown (over SSH):
+
+sw_vers
+df -h
+whoami
+ls
+
+🔗 Video link:
+https://drive.google.com/file/d/1hAhupgXhBVFyhgPntPzcjyRKE8L0VE11/view
+
+▶️ Video 2 — Nmap Usage on Legacy iOS (Unprivileged Mode)
+
+Description:
+Demonstrates running nmap in unprivileged TCP connect mode on iOS 9.3.5, including:
+
+Scanning a target host device
+
+Scanning the localhost / self (the iOS device itself)
+
+Fast-forwarded sections to save time
+
+Command used:
+
+nmap -unprivileged -n -sT TARGET
+
+🔗 Video link:
+https://drive.google.com/file/d/1K4UNADtX0v_I9rSHr3oDTWV5kkIuMqLp/view
+
+These videos intentionally avoid SYN scans, UDP scans, and NSE scripts due to raw socket restrictions on iOS.
 
 ---
 
