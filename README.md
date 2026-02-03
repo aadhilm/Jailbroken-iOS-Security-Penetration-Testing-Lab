@@ -184,13 +184,12 @@ apt-get clean
 This is a **UI bug**, not a shell failure.
 
 ---
-)
 
-🎥 Video Demonstrations (Real Device)
+## 🎥 Video Demonstrations (Real Device)
 
 The following videos document real behavior on a jailbroken iOS 9.3.5 device and are included for transparency and troubleshooting reference.
 
-▶️ Video 1 — Terminal App Auto-Closes After Jailbreak
+### ▶️ Video 1 — Terminal App Auto-Closes After Jailbreak
 
 Description:
 After jailbreak, the on-device terminal application fails to stay open and closes immediately. To continue working, an SSH connection is established from another device and used successfully.
@@ -205,7 +204,7 @@ ls
 🔗 Video link:
 https://drive.google.com/file/d/1hAhupgXhBVFyhgPntPzcjyRKE8L0VE11/view
 
-▶️ Video 2 — Nmap Usage on Legacy iOS (Unprivileged Mode)
+### ▶️ Video 2 — Nmap on Legacy iOS (Unprivileged Mode)
 
 Description:
 Demonstrates running nmap in unprivileged TCP connect mode on iOS 9.3.5, including:
@@ -359,30 +358,23 @@ Each level emphasizes **analysis over exploitation**.
 
 ---
 
-🧭 Terminal Environment Comparison
-App Store Terminal
+## 🧭 Terminal Environment Comparison
 
-Sandbox only
+### App Store Terminal
+- Sandbox only  
+- ❌ No root  
+- ❌ No system files  
+- ❌ No real `apt` / daemons  
+- Safe, limited, for learning commands  
 
-❌ No root
+### Jailbreak Terminal
+- Real system shell  
+- ✅ Root access  
+- ✅ Full iOS filesystem  
+- ✅ Real `apt`, SSH, services  
+- Powerful, risky if careless  
 
-❌ No system files
 
-❌ No real apt / daemons
-
-Safe, limited, for learning commands
-
-Jailbreak Terminal
-
-Real system shell
-
-✅ Root access
-
-✅ Full iOS filesystem
-
-✅ Real apt, SSH, services
-
-Powerful, risky if careless
 ## ✅ Final Notes
 
 > Jailbroken iOS devices are **powerful, constrained, and unforgiving**.
