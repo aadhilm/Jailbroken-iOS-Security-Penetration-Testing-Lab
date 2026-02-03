@@ -221,7 +221,7 @@ nmap -unprivileged -n -sT TARGET
 
 🔗 Video link:
 https://drive.google.com/file/d/1K4UNADtX0v_I9rSHr3oDTWV5kkIuMqLp/view
-## 🖼️ Nmap Scan Screenshot
+## Nmap Scan Screenshot
 
 ![Nmap Scan on iOS 9.3.5](ipad.png)
 
